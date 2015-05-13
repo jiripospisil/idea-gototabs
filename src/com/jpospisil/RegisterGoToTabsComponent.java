@@ -25,7 +25,7 @@ public class RegisterGoToTabsComponent implements ApplicationComponent {
 
     private void addAction(final int index, final DefaultActionGroup goToTabGroup,
                            final ActionManager am) {
-        final String actionName = "Go To Tab #" + index;
+        final String actionName = "Go To Tab #" + (index + 1);
 
         final GoToTabAction action = new GoToTabAction(actionName, index);
 
