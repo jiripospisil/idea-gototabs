@@ -33,9 +33,11 @@ public class GoToTabAction extends AnAction {
     private void goToTab(DataContext dataContext, Project project) {
         final FileEditorManagerEx editorManager = FileEditorManagerEx.getInstanceEx(project);
         EditorWindow currentWindow = EditorWindow.DATA_KEY.getData(dataContext);
+
         if (currentWindow == null) {
             currentWindow = editorManager.getCurrentWindow();
         }
+
         final VirtualFile[] files = currentWindow.getFiles();
         if (index < files.length) {
             editorManager.openFile(files[index], true);
