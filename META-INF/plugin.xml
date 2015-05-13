@@ -2,20 +2,18 @@
     <id>com.jpospisil.gototabs</id>
     <name>GoToTabs</name>
     <version>1.0</version>
-    <vendor email="mekishizufu@gmail.com" url="http://jpospisil.com">Jiri Pospisil</vendor>
+    <vendor email="mekishizufu@gmail.com" url="https://github.com/jiripospisil/idea-gototabs">Jiri Pospisil</vendor>
 
-    <description>
-        <![CDATA[
-            The plugin adds menu actions allowing you to go to a specific tab. You can of
-            course assign keyboard shortcuts the individual actions and for example achieve
-            the behavior known from other editors/ides where you can switch between tabs
-            with <i>alt+&lt;num&gt;</i>.<br><br>
+    <description><![CDATA[
+        The plugin adds menu actions allowing you to go to a specific tab. You can of
+        course assign keyboard shortcuts the individual actions and for example achieve
+        the behavior known from other editors/IDEs where you can switch between tabs
+        with <i>alt+&lt;num&gt;</i>.<br><br>
 
-            To prevent any conflicts, the plugin doesn't assign any shortcuts by itself, you
-            need to do it manually in the Keymap (section Main menu -> Window -> Editor Tabs
-            -> Go To Tabs).
-        ]]>
-    </description>
+        To prevent any conflicts, the plugin doesn't assign any shortcuts by itself, you
+        need to do it manually in the Keymap (section Main menu -> Window -> Editor Tabs
+        -> Go To Tabs).
+        ]]></description>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
     <idea-version since-build="131"/>
