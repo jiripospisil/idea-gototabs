@@ -5,3 +5,7 @@ The plugin adds menu actions allowing you to go to a specific tab. You can of co
 <p align="center"><img src="screen.png" alt="" /></p>
 
 To prevent any conflicts, the plugin doesn't assign any shortcuts by itself, you need to do it manually in the Keymap (section Main menu -> Window -> Editor Tabs -> Go To Tabs).
+
+### License
+
+Apache 2.0
