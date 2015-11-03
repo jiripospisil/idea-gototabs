@@ -39,8 +39,9 @@ public class GoToTabAction extends AnAction {
         }
 
         final VirtualFile[] files = currentWindow.getFiles();
-        if (index < files.length) {
-            editorManager.openFile(files[index], true);
+        final int fileIndex = index == -1 ? files.length - 1 : index;
+        if (fileIndex >= 0 && fileIndex < files.length) {
+            editorManager.openFile(files[fileIndex], true);
         }
     }
 }

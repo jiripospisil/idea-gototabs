@@ -18,14 +18,14 @@ public class RegisterGoToTabsComponent implements ApplicationComponent {
     }
 
     private void addActions(final DefaultActionGroup goToTabsGroup, final ActionManager am) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = -1; i < 10; i++) {
             addAction(i, goToTabsGroup, am);
         }
     }
 
     private void addAction(final int index, final DefaultActionGroup goToTabGroup,
                            final ActionManager am) {
-        final String actionName = "Go To Tab #" + (index + 1);
+        final String actionName = index == -1 ? "Go To Last Tab" : "Go To Tab #" + (index + 1);
 
         final GoToTabAction action = new GoToTabAction(actionName, index);
 
