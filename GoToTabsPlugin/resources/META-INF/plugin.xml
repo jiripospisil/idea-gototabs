@@ -1,0 +1,33 @@
+<idea-plugin>
+  <id>com.jpospisil.gototabs</id>
+  <name>GoToTabs</name>
+  <version>1.3</version>
+  <vendor email="jiri.pospisil@live.com" url="https://github.com/jiripospisil/idea-gototabs">Jiri Pospisil</vendor>
+
+  <description><![CDATA[
+        The plugin adds menu actions allowing you to go to a specific tab. You can of
+        course assign keyboard shortcuts the individual actions and for example achieve
+        the behavior known from other editors/IDEs where you can switch between tabs
+        with <i>alt+&lt;num&gt;</i>.<br><br>
+
+        To prevent any conflicts, the plugin doesn't assign any shortcuts by itself, you
+        need to do it manually in the Keymap (section Main menu -> Window -> Editor Tabs
+        -> Go To Tabs).
+        ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="131"/>
+  <depends>com.intellij.modules.lang</depends>
+
+  <application-components>
+    <component>
+      <implementation-class>com.jpospisil.RegisterGoToTabsComponent</implementation-class>
+    </component>
+  </application-components>
+
+</idea-plugin>
