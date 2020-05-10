@@ -5,6 +5,10 @@
   <vendor email="jiri.pospisil@live.com" url="https://github.com/jiripospisil/idea-gototabs">Jiri Pospisil</vendor>
 
   <description><![CDATA[
+        DEPRECATED: It took a few years but switching between tabs is now supported out
+        of the box (Keymap -> Other -> Tabs). You don't need this plugin anymore. Revolutionary.
+        <br><br>
+
         The plugin adds menu actions allowing you to go to a specific tab. You can of
         course assign keyboard shortcuts the individual actions and for example achieve
         the behavior known from other editors/IDEs where you can switch between tabs
@@ -16,18 +20,14 @@
         ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      Add support for new Intellij IDEA versions.
     ]]>
   </change-notes>
 
-  <idea-version since-build="131"/>
+  <idea-version since-build="193.3210"/>
   <depends>com.intellij.modules.lang</depends>
 
-  <application-components>
-    <component>
-      <implementation-class>com.jpospisil.RegisterGoToTabsComponent</implementation-class>
-    </component>
-  </application-components>
-
+  <extensions defaultExtensionNs="com.intellij">
+    <backgroundPostStartupActivity implementation="com.jpospisil.BackgroundPostStartupActivity"/>
+  </extensions>
 </idea-plugin>

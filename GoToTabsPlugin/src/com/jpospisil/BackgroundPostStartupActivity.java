@@ -2,12 +2,13 @@ package com.jpospisil;
 
 import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.actionSystem.DefaultActionGroup;
-import com.intellij.openapi.components.ApplicationComponent;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.startup.StartupActivity.Background;
 import org.jetbrains.annotations.NotNull;
 
-public class RegisterGoToTabsComponent implements ApplicationComponent {
+public class BackgroundPostStartupActivity implements Background {
     @Override
-    public void initComponent() {
+    public void runActivity(@NotNull Project project) {
         final ActionManager am = ActionManager.getInstance();
         final DefaultActionGroup windowM = (DefaultActionGroup) am.getAction("EditorTabsGroup");
 
@@ -31,15 +32,5 @@ public class RegisterGoToTabsComponent implements ApplicationComponent {
 
         goToTabGroup.add(action);
         am.registerAction(actionName, action);
-    }
-
-    @Override
-    public void disposeComponent() {
-    }
-
-    @NotNull
-    @Override
-    public String getComponentName() {
-        return "RegisterGoToTabsComponent";
     }
 }
