@@ -1,3 +1,5 @@
+#### Deprecated! It took a few years but switching between tabs is now supported out of the box (Keymap -> Other -> Tabs). You don't need this plugin anymore. Revolutionary.
+
 # Go To Tabs for IntelliJ IDEA and others
 
 The plugin adds menu actions allowing you to go to a specific tab. You can of course assign keyboard shortcuts the individual actions and for example achieve the behavior known from other editors/IDEs where you can switch between tabs with <i>alt+&lt;num&gt;</i>.
